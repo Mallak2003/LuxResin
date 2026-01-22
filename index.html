@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="main-html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUX RESIN | الاستوديو العالمي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+
+    <nav class="luxury-nav">
+        <div class="logo">LUX<span>RESIN</span></div>
+        <div class="nav-links">
+            <a href="#home" id="lnk-home" class="interactive">الرئيسية</a>
+            <a href="#designer" id="lnk-design" class="interactive">صمم ساعتك</a>
+            <button onclick="toggleLang( )" class="lang-switch interactive" id="lang-btn">EN</button>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-video-box">
+        <video autoplay muted loop playsinline class="bg-video">
+            <source src="inspiration-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 id="hero-title">سيمفونية الوقت والريزن</h1>
+                <p id="hero-desc">قطع يدوية فريدة تُصمم بلمستك الخاصة</p>
+                <a href="#designer" class="cta-btn interactive" id="hero-cta">ابدأ رحلة الإبداع</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="designer" class="master-designer animated-section">
+        <h2 class="section-title" id="lbl-studio-title">استوديو التصميم الخاص بك</h2>
+        <div class="designer-grid">
+            <div class="preview-container">
+                <div class="watch-constructor" id="watch-canvas">
+                    <div id="resin-layer" class="resin-visual"></div>
+                    <div id="marks-layer" class="marks-visual"></div>
+                    <div id="hands-layer" class="hands-visual"></div>
+                    <div id="frame-layer" class="frame-visual"></div>
+                    <div class="glass-glare"></div>
+                </div>
+            </div>
+
+            <div class="controls-container">
+                <div class="control-group">
+                    <label id="lbl-colors">١. اختيار ألوان الريزن (حتى ٤):</label>
+                    <div class="color-grid" id="palette-grid"></div>
+                </div>
+
+                <div class="control-group">
+                    <label id="lbl-marks">٢. شكل العلامات:</label>
+                    <div class="shape-grid" id="marks-options"></div>
+                </div>
+
+                <div class="control-group">
+                    <label id="lbl-addons">٣. الإضافات الفنية:</label>
+                    <div class="addons-list" id="addons-options"></div>
+                </div>
+
+                <div class="control-group">
+                    <label id="lbl-metal">٤. لون الإطار، العقارب، والعلامات:</label>
+                    <div class="metal-selector" id="metal-options"></div>
+                </div>
+
+                <div class="control-group">
+                    <textarea id="u-notes" class="custom-textarea" placeholder="أضف ملاحظاتك هنا..."></textarea>
+                </div>
+
+                <div class="price-display">
+                    <span id="lbl-total">الإجمالي:</span>
+                    <strong id="final-price">150</strong><span>$</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="shipping-section animated-section">
+        <div class="shipping-card">
+            <h3 id="lbl-ship-h">بيانات الشحن والتوصيل</h3>
+            <div class="shipping-form">
+                <input type="text" id="in-name" placeholder="الاسم الكامل">
+                <input type="text" id="in-country" placeholder="الدولة">
+                <input type="text" id="in-city" placeholder="المدينة / الحي">
+                <input type="tel" id="in-phone" placeholder="رقم الهاتف">
+                <input type="text" id="in-address-detail" placeholder="العنوان بالتفصيل (الشارع، البناية...)">
+            </div>
+            
+            <div class="payment-box">
+                <p id="lbl-pay-p">وسائل الدفع الآمنة:</p>
+                <div class="pay-icons">
+                    <i class="fab fa-cc-visa"></i><i class="fab fa-apple-pay"></i><span class="mada-logo">mada</span><i class="fab fa-cc-mastercard"></i>
+                </div>
+            </div>
+            <button class="final-order-btn interactive" id="btn-order">تأكيد الطلب وشحن ساعتك</button>
+        </div>
+    </section>
+
+    <footer class="site-footer animated-section">
+        <div class="footer-content">
+            <div class="footer-logo">LUX<span>RESIN</span></div>
+            <div class="footer-links">
+                <a href="#home" id="footer-lnk-home" class="interactive">الرئيسية</a>
+                <a href="#designer" id="footer-lnk-design" class="interactive">استوديو التصميم</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="interactive"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="interactive"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="interactive"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="copyright-text" id="copyright">&copy; 2025 LUX RESIN. جميع الحقوق محفوظة.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
